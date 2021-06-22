@@ -55,6 +55,10 @@ All functions are defined and used inside app.js file.It is located in under scr
     It can help user filter flights according to price
     
 
+### constraints
+
+Because of having limited json data only certain dates are available. so slect option was used for this purose
+
 ### Support
 
 For any queries contact sumeetchandel321@gmail.com
