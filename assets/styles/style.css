@@ -440,6 +440,81 @@ div.card div:last-child {
 ;}
 /* slider end */
 
+/* deal section  start*/
+
+
+.deal_container
+{
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap:50px;
+}
+
+.deal_container img
+{
+    width: 100%;
+    height: auto;
+}
+.deal_card
+{
+    display: grid;
+    background-color: #3f3d56;
+    color: white;
+    grid-auto-rows: auto;
+    justify-content: center;
+    row-gap:20px;
+    padding: 30px 10px;
+    border-radius: 88px 0 88px 0;
+    justify-items: center;
+    border: 13px solid #fbc531;
+}
+.deal_card p
+{
+    font-weight: 900;
+}
+.deal_icons
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+.deal_icons i 
+{
+    font-size: 45px;
+    font-weight: 900;
+}
+.gpay
+{
+    color: #c0392b;
+}
+.apay
+{
+    color: #e67e22;
+}
+.ppay
+{
+    color: #2980b9;
+}
+.deal_head
+{
+    font-size: 70px;
+}
+.deal_head2
+{
+    font-size: 25px;
+}
+.deal_head3
+{
+    font-size: 18px;
+}
+
+
+/* deal section end */
+
+/* footer Start */
+
 footer
 {
     display: none;
@@ -449,9 +524,6 @@ footer img{
     width: 100%;
     height: 300px;
 }
-
-/* footer Start */
-
 
 /* footer End */
 
@@ -518,6 +590,15 @@ footer img{
         justify-content: center
     }
     /* Flight Display End */
+
+    /* Deal Section Start */
+
+    .deal_container
+    {
+        grid-template-columns: 400px 400px;
+    }
+
+    /* Deal Section End */
 
     /* footer start */
     footer 
