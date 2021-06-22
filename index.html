@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Navbar Start -->
+        <nav>
+
+            <a href="" class="logo">
+                <div> <i class="fa fa-plane"></i> </div>
+                <div> <span>Nomad</span> </div>
+            </a>
+            <div class="ham">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Banner start -->
+
+        <section class="plane_container">
+            <p>Fly High</p>
+            <div class="plane_wrapper"><img src="./assets/images/plane.svg" alt=""></div>
+        </section>
+
+
+
+        <!-- Banner End -->
+
+        <!-- Tabs -->
+        <div class="tabs_container">
+            <div>
+                <input type="radio" name="flightOptions" id="oneWay" checked>
+                <label for="oneWay">One way</label>
+            </div>
+            <div>
+                <input type="radio" name="flightOptions" id="return">
+                <label for="return">Return</label>
+            </div>
+        </div>
+        <!-- Tabs end -->
+        <!-- Hero Area -->
+
+        <div class="hero-area">
+
+            <div class="banner">
+                <img src="./assets/images/hero-banner.svg" alt="">
+            </div>
+            <form>
+                <select name="" id="departurePlace">
+                    <option value="">Choose Departure</option>
+                    <option value="">Delhi</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Gujrat</option>
+                </select>
+                <span class="error error-departure-place"></span>
+                <select name="" id="arrivalPlace">
+                    <option value="">Choose Arrival</option>
+                    <option value="">Delhi</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Gujrat</option>
+                </select>
+                <span class="error error-arrival-place"></span>
+                <select name="" id="departureDate">
+                    <option value="">Departure Date</option>
+                    <option value="">10/06/2021</option>
+                    <option value="">11/06/2021</option>
+                    <option value="">12/06/2021</option>
+                </select>
+                <span class="error error-departure-date"></span>
+                <select name="" id="returnDate">
+                    <option value="">Return Date</option>
+                    <option value="">10/06/2021</option>
+                    <option value="">11/06/2021</option>
+                    <option value="">12/06/2021</option>
+                </select>
+                <span class="error error-return-date"></span>
+                <button type="submit" class="" id="fetch">Submit <i class="fas fa-arrow-circle-right"></i></button>
+            </form>
+
+        </div>
+
+
+        <!-- Hero Area end -->
+
+        <!-- Flight Cards -->
+
+
+
+
+        <div class="displayFlight">
+
+
+
+            <div class="card">
+                <div class="card_status">
+                    <p>return</p>
+                </div>
+                <div class="logo_container">
+                    <img src="./assets/images/spice_jet_logo.jpg" alt="" class="flight_logo">
+                </div>
+                <p>Flight Name : SDJ#100</p>
+                <p>Price :&#8377; 1000</p>
+                <div class="card_details">
+                    <div>
+                        <p><i class="fas fa-map-marker-alt"></i> Delhi</p>
+                        <p><i class="fas fa-calendar-alt"></i> 01/10/05</p>
+                        <p><i class="fas fa-clock"></i> 2:45 AM</p>
+                    </div>
+                    <div>
+                        <p><i class="fas fa-map-marker-alt"></i> Delhi</p>
+                        <p><i class="fas fa-calendar-alt"></i> 01/10/05</p>
+                        <p><i class="fas fa-clock"></i> 2:45 AM</p>
+                    </div>
+                </div>
+                <div>
+                    <button>Book <i class="fas fa-plane-departure"></i></button>
+                </div>
+
+            </div>
+
+        </div>
+        <!--  flight card End-->
+
+        <!-- price slider -->
+        <div class="wrapper">
+            <h3>You can filter the search according to price</h3>
+            <div class="slider_container">
+                <div class="slider">
+                    <input type="range" min="1500" max="10000" value="50" class="rangeInput">
+                </div>
+                <div class="rangeValue">&#8377;1500</div>
+                <div><button class="goBtn">Go</button></div>
+            </div>
+        </div>
+
+        <!--  price slider end-->
+
+
+        <!-- Footer Start -->
+        <footer class="foot">
+            <img src="./assets/images/wave.png" alt="">
+        </footer>
+
+        <!-- Footer end -->
+
+    </div>
+    <script src="https://kit.fontawesome.com/e319ba56bf.js" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/app.js"></script>
+</body>
+
+</html>

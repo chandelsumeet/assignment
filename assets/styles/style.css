@@ -1,0 +1,528 @@
+:root {
+    --main-color: #3f3d56;
+    --nav-color: #fcfcfc;
+    --hover-color:#858585;
+    /* --main-color:#0099ff; */
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    word-spacing: 2px;
+    
+}
+body
+{
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.main-container {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 35px;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    scroll-snap-type: mandatory;
+    height: 100vh;
+}
+
+/* Navbar start */
+
+.logo-text {
+    color: var(--main-color);
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 10px;
+    width: 180px;
+    border: 2px solid var(--main-color);
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.logo i, .logo span {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.logo:hover
+{
+    transform: scale3d(1.1,1.1,1.1);
+}
+
+nav {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: var(--nav-color);
+    border-bottom: 2px solid var(--main-color);
+    z-index: 100;
+}
+
+.nav-links {
+    display: none;
+    grid-column: 1/3;
+}
+
+.ham {
+    justify-self: end;
+    color: var(--main-color);
+    font-size: 35px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-links ul {
+    display: grid;
+    row-gap: 10px;
+}
+
+.nav-links ul li a {
+    display: inline-block;
+    background-color: var(--main-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    width: 115px;
+    text-align: center;
+    font-weight: 700;
+    word-spacing: 3px;
+}
+.nav-links ul li a:hover
+{
+    box-shadow: 0px 0px 2px 2px var(--hover-color);
+
+}
+/* Navbar end */
+
+/* Banner Start */
+
+.plane_container p {
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 96px);
+    color:var(--main-color);
+}
+
+.plane_container img {
+    display: none;
+    width: 300px;
+    height: auto;
+    transition: transform 0.7s ease-in-out;
+}
+
+.plane_container {
+    height: 50px;
+    position: relative;
+}
+
+.plane_wrapper {
+    position: absolute;
+    animation: plane 5s linear forwards;
+}
+
+
+@keyframes plane {
+    0% {
+        top: 100%;
+        left: calc(-37%);
+        transform: rotate3d(1, 1, 1, 9deg)
+    }
+    100% {
+        top: 27%;
+        left: calc(50% - 164px);
+        transform: rotate3d(1, 1, 1, -18deg);
+    }
+}
+
+.plane_container img:hover
+{
+    transform: rotateX(30deg);
+   
+}
+
+
+
+/* Banner End */
+
+/* Tabs Start */
+
+.tabs_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 25px;
+    align-items: center;
+    background: var(--main-color);
+    padding: 10px;
+    width: 200px;
+    justify-self: center;
+    border-radius: 20px;
+    color: white;
+    
+}
+
+.tabs_container div {
+    display: flex;
+    align-items: center;
+}
+
+.tabs_container div label {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.tabs_container div label input {
+    cursor: pointer;
+}
+
+/* Tabs End */
+
+/* form start */
+
+.hero-area {
+    padding: 0 10px;
+}
+
+form {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 10px;
+    background-color: var(--main-color);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+select {
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 20px;
+    padding-left: 10px;
+    color: var(--main-color);
+    font-family: 'Inter', sans-serif;
+}
+
+select:focus, select:active {
+    box-shadow: 0px 0px 2px 5px var(--hover-color);
+}
+
+.banner img {
+    display: none;
+}
+
+form button {
+    justify-self: center;
+}
+
+button {
+    padding: 12px;
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: var(--main-color);
+    font-weight: 900;
+    background-color: #fff;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+
+button:hover, button:focus {
+    box-shadow: 0px 0px 2px 5px var(--hover-color);
+    transform: scale(1.05);
+    transition: all 300ms;
+}
+
+
+.error
+{
+    color: white;
+}
+
+
+/* form end */
+
+/* spinner start */
+
+.spinner {
+    display: grid;
+    justify-content: center;
+}
+
+.spinner div {
+    width: 100px;
+    height: 100px;
+    border: 5px solid var(--main-color);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* spinner end */
+
+/* Card Start */
+
+.displayFlight {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 10px;
+}
+.displayFlight p 
+{
+    text-align: center;
+    color: white;
+}
+.card {
+    display: grid;
+    grid-auto-rows: auto;
+    background-color: var(--main-color);
+    padding: 50px 20px;
+    border-radius: 5px;
+    row-gap: 15px;
+    margin: 10px;
+    position: relative;
+    box-shadow: 10px 10px 1px 2px var(--hover-color);
+
+}
+
+.card_details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    color: white;
+    column-gap: 80px;
+}
+
+.card_details p {
+    margin-bottom: 5px;
+}
+
+.card_details i {
+    color: white;
+    margin: 5px;
+}
+
+.flight_logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: grid;
+}
+
+.logo_container {
+    justify-self: center;
+}
+
+div.card div:last-child {
+    justify-self: center;
+}
+
+.card_status {
+    position: absolute;
+    right: 0px;
+    padding: 5px 18px;
+    background: #E1D89F;
+    border-radius: 0px 0px 0px 14px;
+    font-weight: 900;
+}
+.card_status p
+{
+    color:var(--main-color)
+}
+/* Card End */
+
+/* no result Found */
+
+.no_result img {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    justify-self: center;
+}
+
+.no_result {
+    display: grid;
+    color: var(--main-color);
+    justify-content: center;
+}
+
+/* no result Found */
+
+/* slider start */
+.wrapper
+{
+    display: none;
+    text-align: center;
+    
+}
+.wrapper h3
+{
+    margin-bottom: 20px;
+    color: var(--main-color)
+}
+.slider_container {
+    display: grid;
+    grid-template-columns: 300px 30px;
+    justify-content: center;
+    column-gap: 15px;
+    align-items: center;
+}
+.slider input
+{
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--main-color);
+    border-radius: 8px;
+    width: 300px;
+}
+
+.slider input::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    height: 15px;
+    width:15px;
+    background: #04AA6D; 
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .slider input::-moz-range-thumb {
+    
+    background: #04AA6D; 
+    cursor: pointer;   
+}
+
+.slider_container .rangeValue
+{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+
+.slider_container .goBtn
+{
+    width: 69px;
+    border: 2px solid var(--main-color);
+    padding: 5px;
+;}
+/* slider end */
+
+footer
+{
+    display: none;
+    z-index: 20;
+}
+footer img{
+    width: 100%;
+    height: 300px;
+}
+
+/* footer Start */
+
+
+/* footer End */
+
+@media (min-width:786px) {
+    /* Navbar start */
+    .ham {
+        display: none;
+    }
+    .nav-links {
+
+        grid-column: 2/3;
+        display: grid;
+        justify-content: center;
+        row-gap: 10px;
+    }
+    .nav-links ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 35px;
+        justify-items: end;
+    }
+    /* Navbar end */
+
+    /* Banner Start */
+    .plane_container img {
+        display: block;
+    }
+
+    .plane_container p 
+    {
+        font-size: 100px;
+        left: calc(50% - 200px);
+       
+    }
+    .plane_container
+    {
+        height: 200px;
+    }
+    /* Banner End */
+
+    /* Tabs start */
+    /* Tabs End */
+    /* Hero Area Start*/
+    form {
+        width: 450px;
+        height: auto;
+        padding: 40px 25px;
+    }
+    .banner img {
+        display: grid;
+        width: 500px;
+        height: auto;
+    }
+    .hero-area {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /* Hero Area End*/
+    /* FLight Display Start */
+    .displayFlight {
+        grid-template-columns: repeat(auto-fit, 390px);
+        justify-content: center
+    }
+    /* Flight Display End */
+
+    /* footer start */
+    footer 
+    {
+        display: block;
+    }
+    /* Footer end */
+}

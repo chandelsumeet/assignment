@@ -1,0 +1,184 @@
+{
+    "data": [
+        {
+            "flightID": "SJD2M#100",
+            "flightName": "Spice Jet",
+            "departurePlace": "Delhi",
+            "departureTime": "4:00 AM",
+            "arrivalPlace":"Mumbai",
+            "arrivalTime":"6:30 AM",
+            "price":"2500",
+            "duration":"02.30",
+            "date":"10/06/2021",
+            "imgUrl":"./assets/images/spice_jet_logo.jpg",
+            "trip":""
+
+        },
+        {
+            "flightID": "AID2M#200",
+            "flightName": "Air India",
+            "departurePlace": "Delhi",
+            "departureTime": "5:00 AM",
+            "arrivalPlace":"Mumbai",
+            "arrivalTime":"8:00 AM",
+            "price":"3500",
+            "duration":"02.30",
+            "date":"10/06/2021",
+            "imgUrl":"./assets/images/spice_jet_logo.jpg",
+            "trip":""
+        },
+        {
+            "flightID": "IND2M#300",
+            "flightName": "INDIGO",
+            "departurePlace": "Delhi",
+            "departureTime": "5:00 AM",
+            "arrivalPlace":"Mumbai",
+            "arrivalTime":"8:00 AM",
+            "price":"5000",
+            "duration":"02.30",
+            "date":"10/06/2021",
+            "imgUrl":"./assets/images/indigo_logo.jpg",
+            "trip":""
+        },
+        {
+            "flightID": "SJD2M#400",
+            "flightName": "Spice Jet",
+            "departurePlace": "Delhi",
+            "departureTime": "4:00 AM",
+            "arrivalPlace":"Mumbai",
+            "arrivalTime":"6:30 AM",
+            "price":"2500",
+            "duration":"02.30",
+            "date":"11/06/2021",
+            "imgUrl":"./assets/images/spice_jet_logo.jpg",
+            "trip":""
+
+        },
+        {
+            "flightID": "AID2M#500",
+            "flightName": "Air India",
+            "departurePlace": "Delhi",
+            "departureTime": "5:00 AM",
+            "arrivalPlace":"Mumbai",
+            "arrivalTime":"8:00 AM",
+            "price":"4000",
+            "duration":"02.30",
+            "date":"11/06/2021",
+            "imgUrl":"./assets/images/Air-India-logo.jpg",
+            "trip":""
+        },
+        {
+            "flightID": "IND2M#600",
+            "flightName": "INDIGO",
+            "departurePlace": "Delhi",
+            "departureTime": "5:00 AM",
+            "arrivalPlace":"Mumbai",
+            "arrivalTime":"8:00 AM",
+            "price":"3500",
+            "duration":"02.30",
+            "date":"11/06/2021",
+            "imgUrl":"./assets/images/indigo_logo.jpg",
+            "trip":""
+        },
+        {
+            "flightID": "SJG2D#700",
+            "flightName": "Spice Jet",
+            "departurePlace": "Mumbai",
+            "departureTime": "4:00 AM",
+            "arrivalPlace":"Delhi",
+            "arrivalTime":"6:30 AM",
+            "price":"4500",
+            "duration":"02.30",
+            "date":"11/06/2021",
+            "imgUrl":"./assets/images/spice_jet_logo.jpg",
+            "trip":""
+
+        },
+        {
+            "flightID": "INM2D#800",
+            "flightName": "Indigo",
+            "departurePlace": "Mumbai",
+            "departureTime": "5:00 AM",
+            "arrivalPlace":"Delhi",
+            "arrivalTime":"7:30 AM",
+            "price":"2500",
+            "duration":"02.30",
+            "date":"11/06/2021",
+            "imgUrl":"./assets/images/indigo_logo.jpg",
+            "trip":""
+
+        },
+        {
+            "flightID": "INM2D#900",
+            "flightName": "Indigo",
+            "departurePlace": "Mumbai",
+            "departureTime": "5:00 AM",
+            "arrivalPlace":"Delhi",
+            "arrivalTime":"7:30 AM",
+            "price":"3500",
+            "duration":"02.30",
+            "date":"12/06/2021",
+            "imgUrl":"./assets/images/indigo_logo.jpg",
+            "trip":""
+
+        },
+        {
+            "flightID": "IND2G#1000",
+            "flightName": "Indigo",
+            "departurePlace": "Delhi",
+            "departureTime": "5:00 AM",
+            "arrivalPlace":"Gujrat",
+            "arrivalTime":"7:30 AM",
+            "price":"3000",
+            "duration":"02.30",
+            "date":"10/06/2021",
+            "imgUrl":"./assets/images/indigo_logo.jpg",
+            "trip":""
+
+        },
+        {
+            "flightID": "IND2G#1100",
+            "flightName": "Indigo",
+            "departurePlace": "Delhi",
+            "departureTime": "5:00 AM",
+            "arrivalPlace":"Gujrat",
+            "arrivalTime":"7:30 AM",
+            "price":"2500",
+            "duration":"02.30",
+            "date":"11/06/2021",
+            "imgUrl":"./assets/images/indigo_logo.jpg",
+            "trip":""
+
+        },
+        {
+            "flightID": "ING2D#1200",
+            "flightName": "Indigo",
+            "departurePlace": "Gujrat",
+            "departureTime": "5:00 AM",
+            "arrivalPlace":"Delhi",
+            "arrivalTime":"7:30 AM",
+            "price":"2500",
+            "duration":"02.30",
+            "date":"11/06/2021",
+            "imgUrl":"./assets/images/indigo_logo.jpg",
+            "trip":""
+
+        },
+        {
+            "flightID": "AIG2D#1200",
+            "flightName": "AIR INDIA",
+            "departurePlace": "Gujrat",
+            "departureTime": "8:00 AM",
+            "arrivalPlace":"Delhi",
+            "arrivalTime":"11:30 AM",
+            "price":"4000",
+            "duration":"02.30",
+            "date":"10/06/2021",
+            "imgUrl":"./assets/images/Air-India-logo.jpg",
+            "trip":""
+
+        }
+
+      
+    ]
+}
